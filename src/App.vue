@@ -15,6 +15,8 @@
 // for(let requiredParameter of ['id']){
 //     if(!idInfo[requiredParameter])// checks to makesure all the required parameters are in the request body
 //       return response
+const BASE_URL = 'https://www.dictionaryapi.com/api/v3/references/thesaurus/json/'
+
 
 export default {
   name: 'app',
@@ -27,9 +29,7 @@ export default {
   },
   methods: {
    async handleSubmit() {
-      const api = '3a24a84c-1f45-466a-b097-c4d753e588f5'
-      const url = `https://www.dictionaryapi.com/api/v3/references/thesaurus/json/${this.text}?key=${api}`
-
+      const url = `${BASE_URL}${this.text}?key=${process.env.VUE_APP_MY_ENV_URL}`
       const response = await fetch(url)
       const data = await response.json()
       

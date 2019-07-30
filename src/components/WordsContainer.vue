@@ -1,8 +1,9 @@
 <template>
   <section>
     <Loading v-if="loading === true"/>
+    <Welcome v-else-if='welcome' />
     <Error v-else-if="error || results.length === 0"/>
-    <Word />
+    <Word v-else v-bind:results='results'/>
   </section>
 </template>
 
@@ -16,13 +17,15 @@ export default {
   components: {
     Loading,
     Word,
-    Error
+    Error,
+    Welcome
   },
   props: {
     loading: Boolean,
     error: Boolean,
     results: Array,
-    word: String
+    word: String,
+    welcome: Boolean
   }
 }
 </script>

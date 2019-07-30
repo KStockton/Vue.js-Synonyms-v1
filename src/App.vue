@@ -34,8 +34,6 @@ export default {
      this.word = word
      try {
        this.isLoading = true
-       console.log('hi')
-       console.log('this.isLoading', this.isLoading)
         const url = `${BASE_URL}${this.word}?key=${process.env.VUE_APP_MY_ENV_URL}`
         const response = await fetch(url)
         const data = await response.json()

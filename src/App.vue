@@ -1,49 +1,55 @@
 <template>
   <div id="app">
-    <Header/>
-    <form v-on:submit.prevent='handleSubmit'>
-      <label>
-        Enter Word
-        <input  v-model='text' name='search' type='text' />
-      </label>
-        <h4 v-if='error'>Error: {{error}}</h4>
-    </form>
+    <Header @change="changeWord"/>
+    <WordsContainer 
+    v-bind:error="error"
+    v-bind:isLoading='isLoading'
+    />
   </div>
 </template>
 
 <script>
-
-import Header from './components/Header'
+import Header from './components/Header';
+import WordsContainer from './components/WordsContainer'
 const BASE_URL = 'https://www.dictionaryapi.com/api/v3/references/thesaurus/json/'
 
 export default {
   name: 'app',
   components: {
     Header,
+    WordsContainer
   },
   data() {
     return {
-      text: '',
+      word: '',
       results: [],
-      error: null
+      error: null,
+      isLoading: false
     }
   },
   methods: {
-   async handleSubmit() {
-      const url = `${BASE_URL}${this.text}?key=${process.env.VUE_APP_MY_ENV_URL}`
-      const response = await fetch(url)
-      const data = await response.json()
-      console.log(data)
-      data.forEach((result, index) => {
+   async changeWord(word) {
+     this.word = word
+     try {
+       this.isLoading = true
+        const url = `${BASE_URL}${this.word}?key=${process.env.VUE_APP_MY_ENV_URL}`
+        const response = await fetch(url)
+        const data = await response.json()
+        console.log(data)
+        data.forEach((result, index) => {
+  
+          for(let reqParams of ['meta']){
+            if(!result[index][reqParams])
+          return this.error = 'Sorry no synonyms with that word 🤷🏾‍'
+        }
+        })
+        this.results = data[0].meta.syns[0]
+  
+    console.log(data)
 
-        for(let reqParams of ['meta']){
-          if(!result[index][reqParams])
-        return this.error = 'Sorry no synonyms with that word 🤷🏾‍'
-      }
-      })
-      this.results = data[0].meta.syns[0]
-
-  console.log(data)
+     }catch(error) {
+       this.error = error.message
+     }
     }
   }
 }

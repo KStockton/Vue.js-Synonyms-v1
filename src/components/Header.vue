@@ -1,38 +1,38 @@
 <template>
   <nav>
     <img src='../assets/microsoft-word-logo.png' class='logo'/>
-  <form v-on:keyup.enter='wordUpdate'>
-    <input placeholder='Enter Word' v-bind="word" v-on:keyup="wordUpdate"/>
-      <i class="material-icons search-symbol">
+  <div  class='input-container'>
+    <input 
+    placeholder='Enter Word' 
+    v-bind:value="word" 
+    v-on:keyup.enter="$emit('change', word)"
+    v-on:keyup="changeWord"/>
+      <i  role='button' class="material-icons search-symbol" 
+      v-on:click="$emit('change', word)">
       search
       </i>
-  </form>
+  </div>
   <h3>Thesaurus</h3>
   </nav>
 </template>
 
-
-
-
-
-
 <script>
-
-
 export default {
   name: 'Header',
+  props: { type: Function },
   data() {
     return {
-      word: '',
-
+      word: ''
     }
   },
-  methods: {
-    wordUpdate (event) {
-      this.word = event.target.value
-    }
+    methods: {
+      changeWord: function (event) {
+        this.word = event.target.value
+      }
+    },
+  mounted() {
+    this.$emit('change', this.word)
   }
-  
 }
   </script>
 
@@ -58,7 +58,7 @@ export default {
     justify-content: center;
 
   }
-  form {
+  .input-container {
     display: flex;
     flex-direction: row;
     justify-content: center;

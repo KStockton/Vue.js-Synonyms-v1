@@ -1,7 +1,10 @@
 <template>
   <div class='welcome-container'>
-    <h1>Welcome</h1>
-    <p>Choose a Word</p>
+    <header>
+      <h1>Welcome</h1>
+      <h3>A Fast and easy way to view synonyms</h3>
+      <h3>Enter a word above to get started!</h3>
+    </header>
   </div>
 </template>
 
@@ -13,7 +16,9 @@ export default {
 </script>
 
 <style scoped>
+
 .welcome-container {
+  background-image: url('https://cdn.dribbble.com/users/1633085/screenshots/5899673/bookappillustration_4x.jpg');
   display: flex;
   align-items: center;
   width: 100vw;
@@ -22,12 +27,22 @@ export default {
   flex-direction: column;
   color: black;
   justify-content: center;
+  background-color: #eee;
+  background-position: center;
+  background-size: cover;
 }
 
 h1 {
   font-size: 40px;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
+}
+header {
+  width: calc(52% - 100px);
+  height: 16rem;
+  background-color: #ffffffdb;
+  min-width: 18rem;
+  border: 2px solid;
 }
 
 </style>

@@ -1,10 +1,11 @@
 <template>
   <div class='word-container'>
     <article  v-bind:key='word' v-for='word in results' class='card-wrapper'>
-      <header>
+      <header >
         <h1>{{word.meta.id}}</h1>
-        <h3>{{word.fl}}</h3>
+        <h3><span>{{word.fl}}</span></h3>
       </header>
+      <div class='word-bottom-half'>
       <section v-bind:key="index" v-for="(def, index) in word.def[0].sseq"> 
         <h5>{{ index + 1}}. {{ def[0][1].dt[0][1] }}</h5>
         <h3>Synonyms</h3>
@@ -16,20 +17,47 @@
           </button>
         </section>
       </section>
+      </div>
     </article>
   </div>
 </template>
 <script>
   export default {
     name: 'Word',
+    data() {
+      return {
+        word: ''
+      }
+    },
     props: {
       results: Array
+    },
+    method: {
+      newWord: function (event) {
+        this.word = event.target.vaule
+      }
+    },
+    mounted() {
+      this.$emit('change', this.word)
     }
   }
 
 </script>
 
 <style scoped>
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  background-color: #fdf9f3;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #14213d;
+  color: white;
+}
 h1 {
   font-size: 24px;
   text-transform: capitalize;
@@ -38,8 +66,13 @@ h1 {
 
 h3 {
   font-weight: 400;
-  font-style: italic;
   font-family: 'Roboto', sans-serif;
+}
+
+span {
+  color: gold;
+  text-transform: capitalize;
+  font-style: italic;
 }
 
 h5 {
@@ -58,6 +91,7 @@ h5 {
 
 .card-wrapper {
   background-color: #e8e7e7;
+  border-radius: 9px;
 }
 
 .syns-wrapper {

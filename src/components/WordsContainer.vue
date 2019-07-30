@@ -1,10 +1,12 @@
 <template>
   <section>
-    <Loading v-if='loading'/>
+    <Loading />
   </section>
 </template>
 
 <script>
+import Loading from './Loading'
+
 export default {
   name: 'WordsContainer',
   components: {

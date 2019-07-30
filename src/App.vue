@@ -3,8 +3,8 @@
     <Header @change="changeWord"/>
     <WordsContainer 
     v-bind:error="error"
-    v-bind:isLoading="isLoading"
-    v-bind:allResults="allResults"
+    v-bind:loading="loading"
+    v-bind:results="results"
     v-bind:word="word"
     />
   </div>
@@ -24,7 +24,7 @@ export default {
   data() {
     return {
       word: '',
-      allResults: [],
+      results: [],
       error: false,
       loading: false
     }

@@ -1,7 +1,7 @@
 <template>
   <section>
-    <Loading v-if="isLoading === true"/>
-    <Error v-else-if="error || allWords.length === 0"/>
+    <Loading v-if="loading === true"/>
+    <Error v-else-if="error || results.length === 0"/>
     <Word />
   </section>
 </template>
@@ -19,9 +19,9 @@ export default {
     Error
   },
   props: {
-    isLoading: Boolean,
+    loading: Boolean,
     error: Boolean,
-    allResults: Array,
+    results: Array,
     word: String
   }
 }

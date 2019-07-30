@@ -3,7 +3,9 @@
     <Header @change="changeWord"/>
     <WordsContainer 
     v-bind:error="error"
-    v-bind:isLoading='isLoading'
+    v-bind:isLoading="isLoading"
+    v-bind:allResults="allResults"
+    v-bind:word="word"
     />
   </div>
 </template>
@@ -22,9 +24,9 @@ export default {
   data() {
     return {
       word: '',
-      results: [],
-      error: null,
-      isLoading: false
+      allResults: [],
+      error: false,
+      loading: false
     }
   },
   methods: {
@@ -32,24 +34,19 @@ export default {
      this.word = word
      try {
        this.isLoading = true
+       console.log('hi')
+       console.log('this.isLoading', this.isLoading)
         const url = `${BASE_URL}${this.word}?key=${process.env.VUE_APP_MY_ENV_URL}`
         const response = await fetch(url)
         const data = await response.json()
-        console.log(data)
-        data.forEach((result, index) => {
-  
-          for(let reqParams of ['meta']){
-            if(!result[index][reqParams])
-          return this.error = 'Sorry no synonyms with that word 🤷🏾‍'
-        }
-        })
-        this.results = data[0].meta.syns[0]
-  
-    console.log(data)
 
+        this.results = data
+        // this.results = data[0].meta.syns[0]
+  console.log('results', this.results)
      }catch(error) {
-       this.error = error.message
+       this.error = true
      }
+      this.isLoading = false
     }
   }
 }

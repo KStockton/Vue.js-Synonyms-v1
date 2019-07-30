@@ -3,23 +3,22 @@
     <img src='../assets/microsoft-word-logo.png' class='logo'/>
   <div  class='input-container'>
     <input 
-    placeholder='Enter Word' 
-    v-bind:value="word" 
-    v-on:keyup.enter="$emit('change', word)"
-    v-on:keyup="changeWord"/>
-      <i  role='button' class="material-icons search-symbol" 
-      v-on:click="$emit('change', word)">
-      search
-      </i>
+      placeholder='Enter Word' 
+      v-bind:value="word" 
+      v-on:keyup.enter="$emit('change', word)"
+      v-on:keyup="changeWord"/>
+    <i  role='button' class="material-icons search-symbol" 
+    v-on:click="$emit('change', word)">
+    search
+    </i>
   </div>
-  <h3>Thesaurus</h3>
+    <h3>Thesaurus</h3>
   </nav>
 </template>
 
 <script>
 export default {
   name: 'Header',
-  props: { type: Function },
   data() {
     return {
       word: ''

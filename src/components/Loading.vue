@@ -1,7 +1,7 @@
 <template>
-<div class='loading-bg'>
-  <h5>Loading...</h5>
-</div>
+  <div class='loading-bg'>
+    <h5>Loading...</h5>
+  </div>
 </template>
 
 <script>

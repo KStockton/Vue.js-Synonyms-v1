@@ -21,10 +21,11 @@ export default {
   background-size: contain;
   flex-direction: column;
   color: black;
+  justify-content: center;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
 }

@@ -6,6 +6,7 @@
     v-bind:loading="loading"
     v-bind:results="results"
     v-bind:word="word"
+    v-bind:welcome='welcome'
     />
   </div>
 </template>
@@ -26,7 +27,8 @@ export default {
       word: '',
       results: [],
       error: false,
-      loading: false
+      loading: false,
+      welcome: true
     }
   },
   methods: {

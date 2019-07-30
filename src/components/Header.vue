@@ -46,11 +46,11 @@ export default {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
-        border-bottom: 2px solid #e8e7e7
+    border-bottom: 2px solid #e8e7e7
 }
   .logo {
-    height: 75px;
-    width: 75px;
+    height: 3rem;
+    width: 3rem;
     grid-row: 1;
     display: flex;
     align-items: center;
@@ -65,7 +65,6 @@ export default {
     font-size: calc(10px + 2vmin);
     color: rgba(249, 245, 245, 0.851);
     width: 100%;
-    margin-top: 20px;
   }
   input {
     height: 3rem;

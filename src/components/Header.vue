@@ -1,38 +1,37 @@
 <template>
   <nav>
     <img src='../assets/microsoft-word-logo.png' class='logo'/>
-  <form v-on:keyup.enter='wordUpdate'>
-    <input placeholder='Enter Word' v-bind="word" v-on:keyup="wordUpdate"/>
-      <i class="material-icons search-symbol">
-      search
-      </i>
-  </form>
-  <h3>Thesaurus</h3>
+  <div  class='input-container'>
+    <input 
+      placeholder='Enter Word' 
+      v-bind:value="word" 
+      v-on:keyup.enter="$emit('change', word)"
+      v-on:keyup="changeWord"/>
+    <i  role='button' class="material-icons search-symbol" 
+    v-on:click="$emit('change', word)">
+    search
+    </i>
+  </div>
+    <h3>Thesaurus</h3>
   </nav>
 </template>
 
-
-
-
-
-
 <script>
-
-
 export default {
   name: 'Header',
   data() {
     return {
-      word: '',
-
+      word: ''
     }
   },
-  methods: {
-    wordUpdate (event) {
-      this.word = event.target.value
-    }
+    methods: {
+      changeWord: function (event) {
+        this.word = event.target.value
+      }
+    },
+  mounted() {
+    this.$emit('change', this.word)
   }
-  
 }
   </script>
 
@@ -47,18 +46,18 @@ export default {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
-        border-bottom: 2px solid #e8e7e7
+    border-bottom: 2px solid #e8e7e7
 }
   .logo {
-    height: 75px;
-    width: 75px;
+    height: 3rem;
+    width: 3rem;
     grid-row: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 
   }
-  form {
+  .input-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -66,7 +65,6 @@ export default {
     font-size: calc(10px + 2vmin);
     color: rgba(249, 245, 245, 0.851);
     width: 100%;
-    margin-top: 20px;
   }
   input {
     height: 3rem;

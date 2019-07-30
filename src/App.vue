@@ -33,17 +33,22 @@ export default {
   },
   methods: {
    async changeWord(word) {
+     if(word.length === 0) return
      this.word = word
      try {
        this.isLoading = true
         const url = `${BASE_URL}${this.word}?key=${process.env.VUE_APP_MY_ENV_URL}`
         const response = await fetch(url)
         const data = await response.json()
-
+        if(data.length > 0 ){
+          this.welcome = false
+        }
         this.results = data
         // this.results = data[0].meta.syns[0]
   console.log('results', this.results)
+  console.log('data', data)
      }catch(error) {
+       console.log(error)
        this.error = true
      }
       this.isLoading = false

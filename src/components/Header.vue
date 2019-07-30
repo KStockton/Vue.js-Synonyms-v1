@@ -1,12 +1,13 @@
 <template>
   <nav>
     <img src='../assets/microsoft-word-logo.png' class='logo'/>
-  <form>
+  <form v-on:keyup.enter='wordUpdate'>
     <input placeholder='Enter Word' v-bind="word" v-on:keyup="wordUpdate"/>
       <i class="material-icons search-symbol">
       search
       </i>
   </form>
+  <h3>Thesaurus</h3>
   </nav>
 </template>
 
@@ -46,6 +47,7 @@ export default {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
+        border-bottom: 2px solid #e8e7e7
 }
   .logo {
     height: 75px;

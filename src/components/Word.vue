@@ -28,14 +28,20 @@
       results: Array
     }
   }
-
 </script>
 
 <style scoped>
-@media (max-width: 1200px) {
+@media (max-width: 1164px) {
   .word-container { 
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+}
+.word-container {
+  margin: 2rem;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 header {
@@ -74,12 +80,6 @@ h5 {
   text-align: left;
   margin-left: 16px;
   font-size: 18px;
-}
-.word-container {
-  margin: 2rem;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
 }
 
 .card-wrapper {

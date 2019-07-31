@@ -47,6 +47,7 @@ export default {
           this.welcome = false
         }
         this.results = data
+        console.log(this.results)
      }catch(error) {
        console.log(error)
        this.error = true

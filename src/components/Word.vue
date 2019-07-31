@@ -65,7 +65,8 @@ span {
 h5 {
   text-transform: capitalize;
   text-align: left;
-  margin-left: 10px;
+  margin-left: 16px;
+  font-size: 18px;
 }
 .word-container {
   margin: 2rem;
@@ -86,7 +87,11 @@ h5 {
   margin-left: 10px;
 }
 
-.button {
+button {
   cursor: pointer;
+  font-size: .9rem;
+  background-color: gold;
+  font-weight: 500;
+  margin: 6px;
 }
 </style>

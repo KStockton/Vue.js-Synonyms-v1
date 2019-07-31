@@ -1,7 +1,9 @@
 <template>
 <section>
 
-  <h1>Sorry 🤯 No results found</h1>
+  <h1>Sorry <span aria-label="Emoji: shrug">🤷🏾‍♂</span> 
+    No results found<span ria-label="Emoji: head-exploding"> 🤯</span></h1>
+  <h1>Try the words below</h1>
   <ul>
     <li v-for='result in results' v-bind:key='result'>
       <button>{{result}}</button>
@@ -25,7 +27,22 @@ export default {
 
 
 <style scoped>
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
+  li {
+    list-style-type: none;
+    margin: 10px;
+  }
+
+  button {
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: gold;
+  }
 </style>
 
 

@@ -7,6 +7,7 @@
     v-bind:results="results"
     v-bind:word="word"
     v-bind:welcome='welcome'
+    @change='changeWord'
     />
   </div>
 </template>

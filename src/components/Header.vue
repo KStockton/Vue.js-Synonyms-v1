@@ -36,8 +36,27 @@ export default {
   </script>
 
 <style scoped>
+  @media (max-width: 729px) {
+    nav {
+      grid-template-rows: repeat(2, 50px);
+      grid-column: 1;
+    }
+    img {
+      display: none;
+      visibility:hidden;
+    }
+    h3 {
+      grid-row: 1;
+      grid-column: 2;
+      margin: 0px;
+    }
+    .input-container {
+      grid-row: 2;
+      grid-column: 2;
+    }
+  }
   nav {
-    background-color: #fdf9f3;
+    background-color: #14213D;
     height: 100px;
     width: 100vw;
     max-width: 100%;
@@ -46,7 +65,9 @@ export default {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
-    border-bottom: 2px solid #e8e7e7
+    border-bottom: 3px solid #fff;
+    color: white;
+    min-width: 27rem;
 }
   .logo {
     height: 3rem;
@@ -55,6 +76,8 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    border-radius: 8px;
 
   }
   .input-container {
@@ -67,29 +90,32 @@ export default {
     width: 100%;
   }
   input {
-    height: 3rem;
+    height: 2.1rem;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-style: none;
     border-color: #c3e5fe;
     font-size: 20px;
-    color: grey;
+    color: black;
     padding-left: 15px;
-    width: 17.3rem;
+    width: 13.3rem;
     background-color: #e8e7e7;
   }
   .search-symbol {
     background-color: #54494B;
     color: #ffffff;
     margin-left: -4px;
-    height: 2.5rem;
+    height: 1.7rem;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     padding: 5px 10px;
-    font-size: 41px;
+    font-size: 26px;
     line-height: 100%;
     cursor: pointer;
     border: none;
+  }
+  h3 {
+    font-size: 1.5rem;
   }
 </style>
 

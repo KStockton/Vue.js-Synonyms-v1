@@ -27,6 +27,9 @@ export default {
 
 
 <style scoped>
+  h1 {
+    font-size: 24px;
+  }
   ul {
     display: flex;
     flex-direction: row;
@@ -42,6 +45,8 @@ export default {
     font-size: 2rem;
     cursor: pointer;
     background-color: gold;
+    border-radius: 5px;
+    border: none;
   }
 </style>
 

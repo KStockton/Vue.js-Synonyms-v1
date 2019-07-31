@@ -88,10 +88,13 @@ h5 {
 }
 
 button {
-  cursor: pointer;
-  font-size: .9rem;
-  background-color: gold;
-  font-weight: 500;
-  margin: 6px;
+    cursor: pointer;
+    font-size: .9rem;
+    background-color: gold;
+    font-weight: 500;
+    margin: 6px;
+    border: none;
+    min-height: 30px;
+    border-radius: 5px;
 }
 </style>

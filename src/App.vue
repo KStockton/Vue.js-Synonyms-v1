@@ -7,7 +7,7 @@
     v-bind:results="results"
     v-bind:word="word"
     v-bind:welcome='welcome'
-    v:on:update="changeWord"
+    @change='changeWord'
     />
   </div>
 </template>

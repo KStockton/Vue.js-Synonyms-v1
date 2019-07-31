@@ -12,7 +12,7 @@
         <section class='syns-wrapper'>
           <button 
             v-for='syns in word.meta.syns[0]' v-bind:key="syns"
-            v-on:click="$emit('change', syns)">
+            @click="$emit('change', syns)">
             {{syns}}
           </button>
         </section>
@@ -24,21 +24,8 @@
 <script>
   export default {
     name: 'Word',
-    data() {
-      return {
-        word: ''
-      }
-    },
     props: {
       results: Array
-    },
-    method: {
-      newWord: function (event) {
-        this.word = event.target.vaule
-      }
-    },
-    mounted() {
-      this.$emit('change', this.word)
     }
   }
 

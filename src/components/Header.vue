@@ -90,7 +90,7 @@ export default {
     width: 100%;
   }
   input {
-    height: 2.1rem;
+    height: 36px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-style: none;

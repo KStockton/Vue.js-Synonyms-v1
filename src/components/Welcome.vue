@@ -2,8 +2,8 @@
   <div class='welcome-container'>
     <header>
       <h1>Welcome</h1>
-      <h3>A Fast and easy way to view synonyms</h3>
-      <h3>Enter a word above to get started!</h3>
+      <h3>To a fast and easy way to view synonyms</h3>
+      <h3>Search a word above to get started!</h3>
     </header>
   </div>
 </template>

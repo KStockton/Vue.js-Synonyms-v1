@@ -32,6 +32,15 @@
 </script>
 
 <style scoped>
+@media (max-width: 729px) {
+  .word-container {
+    margin: 2rem;
+
+display: grid;
+
+grid-gap: 10px;
+  }
+}
 
 header {
   display: flex;
@@ -49,6 +58,8 @@ h1 {
   font-size: 24px;
   text-transform: capitalize;
   font-weight:700;
+  margin-top: 9px;
+  margin-bottom: 1px;
 }
 
 h3 {
@@ -80,6 +91,7 @@ h5 {
 .card-wrapper {
   background-color: #e8e7e7;
   border-radius: 9px;
+  min-width: 22rem;
 }
 
 .syns-wrapper {
@@ -97,4 +109,5 @@ button {
     min-height: 30px;
     border-radius: 5px;
 }
+
 </style>

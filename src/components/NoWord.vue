@@ -2,11 +2,12 @@
 <section>
 
   <h1>Sorry <span aria-label="Emoji: shrug">🤷🏾‍♂</span> 
-    No results found<span ria-label="Emoji: head-exploding"> 🤯</span></h1>
-  <h1>Try the words below</h1>
+    no results found with "{{word}}" <span ria-label="Emoji: head-exploding"> 🤯</span>
+  </h1>
+  <h1>Try a word below</h1>
   <ul>
     <li v-for='result in results' v-bind:key='result'>
-      <button>{{result}}</button>
+      <button @click="$emit('change', result)">{{result}}</button>
     </li>
   </ul>
 
@@ -18,7 +19,8 @@
 export default {
   name: 'NoWord',
   props: {
-    results: Array
+    results: Array,
+    word: String
   }
 }
 </script>

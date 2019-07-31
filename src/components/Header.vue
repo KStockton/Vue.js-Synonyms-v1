@@ -36,6 +36,25 @@ export default {
   </script>
 
 <style scoped>
+  @media (max-width: 729px) {
+    nav {
+      grid-template-rows: repeat(2, 50px);
+      grid-column: 1;
+    }
+    img {
+      display: none;
+      visibility:hidden;
+    }
+    h3 {
+      grid-row: 1;
+      grid-column: 2;
+      margin: 0px;
+    }
+    .input-container {
+      grid-row: 2;
+      grid-column: 2;
+    }
+  }
   nav {
     background-color: #14213D;
     height: 100px;

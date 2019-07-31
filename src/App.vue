@@ -45,11 +45,7 @@ export default {
           this.welcome = false
         }
         this.results = data
-        // this.results = data[0].meta.syns[0]
-  console.log('results', this.results)
-  console.log('data', data)
      }catch(error) {
-       console.log(error)
        this.error = true
      }
       this.isLoading = false

@@ -93,7 +93,6 @@ export default {
     height: 36px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    border-style: none;
     border-color: #c3e5fe;
     font-size: 20px;
     color: black;
@@ -105,12 +104,12 @@ export default {
     background-color: #54494B;
     color: #ffffff;
     margin-left: -4px;
-    height: 1.7rem;
+    height: 30px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     padding: 5px 10px;
     font-size: 26px;
-    line-height: 100%;
+    line-height: 131%;
     cursor: pointer;
     border: none;
   }

@@ -11,7 +11,7 @@
         <h3>Synonyms</h3>
         <section class='syns-wrapper'>
           <button 
-            v-for='syns in word.meta.syns[0]' v-bind:key="syns"
+            v-for='syns in word.meta.syns[1]' v-bind:key="syns"
             @click="$emit('change', syns)">
             {{syns}}
           </button>

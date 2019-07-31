@@ -34,10 +34,12 @@ export default {
   },
   methods: {
    async changeWord(word) {
+        //  "start": "node server.js",
+
      if(word.length === 0) return
      this.word = word
      try {
-       this.isLoading = true
+       this.loading = true
         const url = `${BASE_URL}${this.word}?key=${process.env.VUE_APP_API_KEY}`
         const response = await fetch(url)
         const data = await response.json()
@@ -46,9 +48,10 @@ export default {
         }
         this.results = data
      }catch(error) {
+       console.log(error)
        this.error = true
      }
-      this.isLoading = false
+      this.loading = false
     }
   }
 }
@@ -56,10 +59,10 @@ export default {
 
 <style>
 
-* { 
-  margin:0; 
-  padding:0; 
-  box-sizing:border-box; 
+html { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
 }
 body {
   margin: 0px;

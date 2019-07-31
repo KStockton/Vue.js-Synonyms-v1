@@ -10,8 +10,8 @@
       <button @click="$emit('change', result)">{{result}}</button>
     </li>
   </ul>
-
 </section>
+
 </template>
 
 <script>
@@ -31,11 +31,13 @@ export default {
 <style scoped>
   h1 {
     font-size: 24px;
+    margin-top: 31px;
   }
   ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 16px;
   }
 
   li {
@@ -49,6 +51,7 @@ export default {
     background-color: gold;
     border-radius: 5px;
     border: none;
+    padding: 8px;
   }
 </style>
 

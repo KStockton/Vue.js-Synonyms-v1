@@ -40,6 +40,7 @@ export default {
     nav {
       grid-template-rows: repeat(2, 50px);
       grid-column: 1;
+      min-height: 120px;
     }
     img {
       display: none;
@@ -55,6 +56,7 @@ export default {
       grid-column: 2;
     }
   }
+
   nav {
     background-color: #14213D;
     height: 100px;
@@ -67,8 +69,8 @@ export default {
     justify-items: center;
     border-bottom: 3px solid #fff;
     color: white;
-    min-width: 27rem;
 }
+
   .logo {
     height: 3rem;
     width: 3rem;
@@ -104,7 +106,7 @@ export default {
     background-color: #54494B;
     color: #ffffff;
     margin-left: -4px;
-    height: 30px;
+    height: 32px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     padding: 5px 10px;

@@ -32,7 +32,7 @@
 </script>
 
 <style scoped>
-@media (max-width: 1197px) {
+@media (max-width: 1200px) {
   .word-container { 
     grid-template-columns: repeat(2, 1fr);
   }

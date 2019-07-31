@@ -32,13 +32,9 @@
 </script>
 
 <style scoped>
-@media (max-width: 729px) {
-  .word-container {
-    margin: 2rem;
-
-display: grid;
-
-grid-gap: 10px;
+@media (max-width: 1197px) {
+  .word-container { 
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -84,8 +80,6 @@ h5 {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-auto-flow: row;
 }
 
 .card-wrapper {
@@ -97,6 +91,7 @@ h5 {
 .syns-wrapper {
   text-align: left;
   margin-left: 10px;
+  margin-bottom: 9px
 }
 
 button {

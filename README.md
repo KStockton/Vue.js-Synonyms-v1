@@ -7,7 +7,7 @@ To learn how to use view and build a thesaurus.
 View the website here  https://thesaurus-challenge.herokuapp.com/
 ## Installing / Lets Get Started
 ```bash
-git clone [https://github.com/KStockton/Vue.js-Synonyms-v1.git] [what you want to name the repo]
+git clone [https://github.com/KStockton/Vue.js-Synonyms-v1.git]
 ```
 
 Once you have cloned the repo, install the library dependencies. Run:

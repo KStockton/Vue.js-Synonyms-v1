@@ -9,11 +9,11 @@
       <section v-bind:key="index" v-for="(def, index) in word.def[0].sseq"> 
         <h5>{{ index + 1}}. {{ def[0][1].dt[0][1] }}</h5>
         <h3>Synonyms</h3>
-        <section class='syns-wrapper'>
-          <button 
-            v-for='syns in word.meta.syns[1]' v-bind:key="syns"
-            @click="$emit('change', syns)">
-            {{syns}}
+        <section class='syns-wrapper' >
+          <button v-for="word_syn in def[0][1].syn_list[0]" 
+          v-bind:key='word_syn.wd'
+          @click="$emit('change', word_syn.wd)">
+            {{word_syn.wd}}
           </button>
         </section>
       </section>

@@ -13,6 +13,7 @@
 </template>
 
 <script>
+  // "start": "node server.js"
 import Header from './components/Header';
 import WordsContainer from './components/WordsContainer'
 const BASE_URL = 'https://www.dictionaryapi.com/api/v3/references/thesaurus/json/'

@@ -10,7 +10,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "eslint": "./node_modules/.bin/eslint src",
-    "start": "node server.js"
+    "start": "npm run server"
   },
   "dependencies": {
     "core-js": "^2.6.5",

@@ -1,6 +1,6 @@
 # Welcome to Synonyms in Vue
 
-## The Goals and Objectives of this project is as below:
+### Goals and Objectives:
 
 To learn how to use view and build a thesaurus.  
 
@@ -26,8 +26,12 @@ This project was built with the following
 - Vue
 - Async Javascript
 
+### Wireframe:
 
-## Screenshot
+![Vue wireframe](https://user-images.githubusercontent.com/34406483/62659374-6e304b80-b928-11e9-9e27-66c6e117080e.jpeg)
+
+
+### Screenshot
 <img width="1674" alt="Screen Shot 2019-07-30 at 11 08 10 PM" src="https://user-images.githubusercontent.com/34406483/62241964-72dc8900-b397-11e9-9cf1-1cc639c7e5c6.png">
 
 <img width="1674" alt="Screen Shot 2019-07-30 at 11 09 12 PM" src="https://user-images.githubusercontent.com/34406483/62241985-7c65f100-b397-11e9-8cbc-fbf1d713ba0f.png">

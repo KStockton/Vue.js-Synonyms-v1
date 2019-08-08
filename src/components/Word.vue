@@ -31,17 +31,17 @@
 </script>
 
 <style scoped>
-@media (max-width: 1164px) {
+/* @media (min-width: 400px) {
   .word-container { 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    margin: 5px;
   }
-}
+} */
+
 .word-container {
-  margin: 2rem;
+  margin: 1rem;
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  grid-template-columns: repeat( auto-fit, minmax(347px, 1fr));
 }
 
 header {
@@ -85,7 +85,7 @@ h5 {
 .card-wrapper {
   background-color: #e8e7e7;
   border-radius: 9px;
-  min-width: 22rem;
+  min-width: 21rem;
 }
 
 .syns-wrapper {

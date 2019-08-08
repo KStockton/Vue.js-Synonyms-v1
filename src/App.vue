@@ -34,7 +34,6 @@ export default {
   },
   methods: {
    async changeWord(word) {
-        //  "start": "node server.js",
 
      if(word.length === 0) return
      this.word = word

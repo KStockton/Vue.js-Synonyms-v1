@@ -67,8 +67,10 @@ export default {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
-    border-bottom: 3px solid #fff;
+    border-bottom: 1px solid #ffd700;
     color: white;
+    position: sticky;
+    top: 1px;
 }
 
   .logo {

@@ -31,11 +31,6 @@
 </script>
 
 <style scoped>
-/* @media (min-width: 400px) {
-  .word-container { 
-    margin: 5px;
-  }
-} */
 
 .word-container {
   margin: 1rem;

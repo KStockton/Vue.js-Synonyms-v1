@@ -16,6 +16,11 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 400px) {
+  .welcome-container {
+    max-height: 34rem;  
+  }
+}
 
 .welcome-container {
   background-image: url('https://cdn.dribbble.com/users/1633085/screenshots/5899673/bookappillustration_4x.jpg');

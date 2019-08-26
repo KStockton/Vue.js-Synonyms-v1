@@ -56,6 +56,10 @@ export default {
       grid-column: 2;
     }
 
+    .search-symbol {
+      display: none;
+    }
+
   }
 
   nav {
@@ -102,20 +106,22 @@ export default {
     border-color: #c3e5fe;
     font-size: 18px;
     color: rgb(117, 117, 117);
-    padding-left: 32px;
+    padding-left: 11px;
     width: 11.3rem;
     background-color: #e8e7e7;
   }
-
+  
   .search-symbol {
-    cursor: pointer;
+    
+    /* cursor: pointer;
     border: none;
     display: flex;
     align-items: center;
     position: absolute;
     left: 103px;
     color: rgb(117, 117, 117);
-    font-size: 19px;
+    font-size: 19px; */
+    display: none;
   }
 
   h3 {

@@ -55,7 +55,7 @@ export default {
       grid-row: 2;
       grid-column: 2;
     }
-    .search-symbol {
+    nav i {
       height: 36px;
     }
   }
@@ -96,6 +96,7 @@ export default {
     color: rgba(249, 245, 245, 0.851);
     width: 100%;
   }
+
   input {
     height: 36px;
     border-top-left-radius: 5px;
@@ -104,14 +105,15 @@ export default {
     font-size: 20px;
     color: black;
     padding-left: 15px;
-    width: 13.3rem;
+    width: 10.3rem;
     background-color: #e8e7e7;
   }
+
   .search-symbol {
     background-color: #54494B;
     color: #ffffff;
     margin-left: -4px;
-    height: 32px;
+    height: 36px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     padding: 5px 10px;
@@ -120,8 +122,10 @@ export default {
     cursor: pointer;
     border: none;
   }
+
   h3 {
     font-size: 1.5rem;
   }
+  
 </style>
 

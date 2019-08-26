@@ -59,7 +59,11 @@ export default {
       height: 36px;
     }
 
-  
+    .search-symbol {
+      -webkit-border-radius: 0px;
+      border-radius: 0;
+      height: 2.8rem;
+    }
   }
 
   nav {

@@ -58,6 +58,8 @@ export default {
     nav i {
       height: 36px;
     }
+
+  
   }
 
   nav {
@@ -109,13 +111,12 @@ export default {
     padding-left: 15px;
     width: 10.3rem;
     background-color: #e8e7e7;
-    border: none;
   }
 
   .search-symbol {
     background-color: #54494b;
     color: #fff;
-    height: 2.2rem;
+    height: 2.5rem;
     border-top-right-radius: 8px;
     -webkit-border-top-right-radius: 8px;
     -webkit-border-bottom-right-radius: 8px;

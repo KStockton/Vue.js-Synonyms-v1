@@ -55,6 +55,9 @@ export default {
       grid-row: 2;
       grid-column: 2;
     }
+    .search-symbol {
+      height: 36px;
+    }
   }
 
   nav {

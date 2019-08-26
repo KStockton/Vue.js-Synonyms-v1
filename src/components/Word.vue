@@ -42,7 +42,7 @@
 header {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   flex-direction: column;
   background-color: #fdf9f3;
   border-top-left-radius: 8px;

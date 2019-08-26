@@ -55,15 +55,7 @@ export default {
       grid-row: 2;
       grid-column: 2;
     }
-    nav i {
-      height: 36px;
-    }
 
-    .search-symbol {
-      -webkit-border-radius: 0px;
-      border-radius: 0;
-      height: 2.8rem;
-    }
   }
 
   nav {
@@ -101,35 +93,29 @@ export default {
     font-size: calc(10px + 2vmin);
     color: rgba(249, 245, 245, 0.851);
     width: 100%;
+    position: relative;
   }
 
   input {
     height: 2rem;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    -webkit-border-top-left-radius: 5px;
-    -webkit-border-bottom-left-radius: 8px;
+    border-radius: 5px;
     border-color: #c3e5fe;
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    padding-left: 15px;
-    width: 10.3rem;
+    font-size: 18px;
+    color: rgb(117, 117, 117);
+    padding-left: 32px;
+    width: 11.3rem;
     background-color: #e8e7e7;
   }
 
   .search-symbol {
-    background-color: #54494b;
-    color: #fff;
-    height: 2.5rem;
-    border-top-right-radius: 8px;
-    -webkit-border-top-right-radius: 8px;
-    -webkit-border-bottom-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    padding: 0px 4px;
     cursor: pointer;
     border: none;
     display: flex;
     align-items: center;
+    position: absolute;
+    left: 103px;
+    color: rgb(117, 117, 117);
+    font-size: 19px;
   }
 
   h3 {

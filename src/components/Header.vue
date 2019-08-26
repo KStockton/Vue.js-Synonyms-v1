@@ -71,7 +71,7 @@ export default {
     align-items: center;
     justify-items: center;
     border-bottom: 1px solid #ffd700;
-    color: white;
+    color: #ffffff;
     position: sticky;
     top: 1px;
 }
@@ -83,7 +83,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 8px;
 
   }
@@ -98,29 +98,29 @@ export default {
   }
 
   input {
-    height: 36px;
+    height: 2rem;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-color: #c3e5fe;
     font-size: 20px;
-    color: black;
+    color: rgb(0, 0, 0);
     padding-left: 15px;
     width: 10.3rem;
     background-color: #e8e7e7;
+    border: none;
   }
 
   .search-symbol {
-    background-color: #54494B;
-    color: #ffffff;
-    margin-left: -4px;
-    height: 36px;
+    background-color: #54494b;
+    color: #fff;
+    height: 2.2rem;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    padding: 5px 10px;
-    font-size: 26px;
-    line-height: 131%;
+    padding: 0px 4px;
     cursor: pointer;
     border: none;
+    display: flex;
+    align-items: center;
   }
 
   h3 {

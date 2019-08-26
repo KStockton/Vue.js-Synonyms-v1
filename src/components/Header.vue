@@ -101,6 +101,8 @@ export default {
     height: 2rem;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 8px;
     border-color: #c3e5fe;
     font-size: 20px;
     color: rgb(0, 0, 0);
@@ -115,6 +117,8 @@ export default {
     color: #fff;
     height: 2.2rem;
     border-top-right-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
     border-bottom-right-radius: 8px;
     padding: 0px 4px;
     cursor: pointer;

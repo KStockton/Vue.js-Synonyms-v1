@@ -42,6 +42,15 @@ export default {
   </script>
 
 <style scoped>
+  @media only screen
+  and (max-width: 320px)
+  and (max-width: 420px)
+  and (max-width: 650px) {
+     input {
+       border-radius: 0px;
+     }
+  }
+
   @media (max-width: 729px) {
     nav {
       grid-template-rows: repeat(2, 50px);

@@ -36,7 +36,7 @@
   margin: 1rem;
   display: grid;
   grid-gap: 15px;
-  grid-template-columns: repeat( auto-fit, minmax(347px, 1fr));
+  grid-template-columns: repeat( auto-fill, minmax(347px, 1fr));
 }
 
 header {

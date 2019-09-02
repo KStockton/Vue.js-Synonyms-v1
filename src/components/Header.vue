@@ -7,10 +7,16 @@
         v-bind:value="word" 
         v-on:keyup.enter="$emit('change', word)"
         v-on:keyup="changeWord"/>
-      <i  role='button' class="material-icons search-symbol" 
-      v-on:click="$emit('change', word)">
+        <button 
+        type='submit' 
+        name='submit' 
+        id='submit-word'
+        v-on:click="$emit('change', word)"
+        >
+      <i  role='button' class="material-icons search-symbol">
       search
       </i>
+      </button>
     </div>
       <h3>Thesaurus</h3>
   </nav>
@@ -56,10 +62,6 @@ export default {
       grid-column: 2;
     }
 
-    .search-symbol {
-      display: none;
-    }
-
   }
 
   nav {
@@ -102,8 +104,7 @@ export default {
 
   input {
     height: 2rem;
-    border-radius: 5px;
-    border-color: #c3e5fe;
+    border: none;
     font-size: 18px;
     color: rgb(117, 117, 117);
     padding-left: 11px;
@@ -112,16 +113,18 @@ export default {
   }
   
   .search-symbol {
-    
-    /* cursor: pointer;
+    cursor: pointer;
     border: none;
     display: flex;
     align-items: center;
-    position: absolute;
-    left: 103px;
     color: rgb(117, 117, 117);
-    font-size: 19px; */
-    display: none;
+    font-size: 19px;
+  }
+
+  #submit-word {
+    border:none;
+    width: 35px;
+    height: 34px;
   }
 
   h3 {

@@ -125,6 +125,7 @@ export default {
     border:none;
     width: 35px;
     height: 34px;
+    background-color: white;
   }
 
   h3 {

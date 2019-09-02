@@ -108,7 +108,7 @@ export default {
     align-items: center;
     font-size: calc(10px + 2vmin);
     color: rgba(249, 245, 245, 0.851);
-    width: 100%;
+    width: 224px;
     height: 35px;
     position: relative;
   }

@@ -89,7 +89,6 @@ export default {
     justify-content: center;
     background-color: #ffffff;
     border-radius: 8px;
-
   }
   .input-container {
     display: flex;
@@ -99,15 +98,16 @@ export default {
     font-size: calc(10px + 2vmin);
     color: rgba(249, 245, 245, 0.851);
     width: 100%;
+    height: 35px;
     position: relative;
   }
 
   input {
-    height: 2rem;
+    height: 100%;
     border: none;
     font-size: 18px;
     color: rgb(117, 117, 117);
-    padding-left: 11px;
+    padding: 0px 0px 0px 9px;
     width: 11.3rem;
     background-color: #e8e7e7;
   }
@@ -123,8 +123,7 @@ export default {
 
   #submit-word {
     border:none;
-    width: 35px;
-    height: 34px;
+    height: 100%;
     background-color: white;
   }
 

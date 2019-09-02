@@ -1,8 +1,8 @@
 <template>
 <section>
 
-  <h1>Sorry <span aria-label="Emoji: shrug">🤷🏾‍♂</span> 
-    no results found with "{{word}}" <span ria-label="Emoji: head-exploding"> 🤯</span>
+  <h1>Sorry <span aria-label="Emoji: shrug">🤷‍♂️</span> 
+    no results found with "{{word}}" !<span ria-label="Emoji: head-exploding"> 🤯</span>
   </h1>
   <h1>Try a word below</h1>
   <ul>

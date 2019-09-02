@@ -118,7 +118,7 @@ export default {
     border: none;
     font-size: 18px;
     color: rgb(117, 117, 117);
-    padding: 0px 39px 0px 9px;
+    padding: 0px 41px 0px 9px;
     width: 11.3rem;
     background-color: #e8e7e7;
   }
@@ -137,7 +137,7 @@ export default {
     height: 100%;
     background-color: white;
     position: absolute;
-    right: -4px;
+    right: -6px;
   }
 
   h3 {

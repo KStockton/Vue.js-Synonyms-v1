@@ -46,8 +46,10 @@ export default {
   and (max-width: 320px)
   and (max-width: 420px)
   and (max-width: 650px) {
-     input {
-       border-radius: 0px;
+    input {
+       -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+       border-radius: 0;
      }
   }
 
@@ -116,7 +118,7 @@ export default {
     border: none;
     font-size: 18px;
     color: rgb(117, 117, 117);
-    padding: 0px 0px 0px 9px;
+    padding: 0px 34px 0px 9px;
     width: 11.3rem;
     background-color: #e8e7e7;
   }
@@ -134,6 +136,8 @@ export default {
     border:none;
     height: 100%;
     background-color: white;
+    position: absolute;
+    right: 0;
   }
 
   h3 {

@@ -16,7 +16,6 @@
 import Header from './components/Header';
 import WordsContainer from './components/WordsContainer'
 const BASE_URL = 'https://www.dictionaryapi.com/api/v3/references/thesaurus/json/'
-
 export default {
   name: 'app',
   components: {
@@ -35,7 +34,7 @@ export default {
   methods: {
    async changeWord(word) {
 
-     if(word.length === 0) return
+     if(word.length === 0) return null;
      this.word = word
      try {
        this.loading = true
@@ -45,8 +44,7 @@ export default {
         if(data.length > 0 ){
           this.welcome = false
         }
-        this.results = data
-        console.log(this.results)
+        this.results = data[0].meta.syns[0]
      }catch(error) {
        console.log(error)
        this.error = true

@@ -8,6 +8,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "clean": "rm -rf ./node_modules package-lock.json .cache dist && npm install",
     "lint": "vue-cli-service lint",
     "eslint": "./node_modules/.bin/eslint src",
     "start": "node server.js"

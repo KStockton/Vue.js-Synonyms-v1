@@ -44,7 +44,8 @@ export default {
         if(data.length > 0 ){
           this.welcome = false
         }
-        this.results = data[0].meta.syns[0]
+        this.results = data	
+        console.log(this.results)
      }catch(error) {
        console.log(error)
        this.error = true

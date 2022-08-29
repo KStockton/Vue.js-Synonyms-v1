@@ -23,7 +23,7 @@ View the website here  https://thesaurus-challenge.herokuapp.com/
 
 ![Vue wireframe](https://user-images.githubusercontent.com/34406483/62659374-6e304b80-b928-11e9-9e27-66c6e117080e.jpeg)
 
-### Mobile
+### Mobile Site
 ![Screen Shot 2019-08-07 at 8 13 15 PM](https://user-images.githubusercontent.com/34406483/62670286-f249f980-b94f-11e9-92b1-f30fd8cf52ba.png)
 
 ### Desktop

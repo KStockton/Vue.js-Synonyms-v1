@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header @change="changeWord"/>
+    <Top @change="changeWord"/>
     <WordsContainer 
     v-bind:error="error"
     v-bind:loading="loading"
@@ -13,13 +13,13 @@
 </template>
 
 <script>
-import Header from './components/Header';
+import Top from './components/Top';
 import WordsContainer from './components/WordsContainer'
 const BASE_URL = 'https://www.dictionaryapi.com/api/v3/references/thesaurus/json/'
 export default {
   name: 'app',
   components: {
-    Header,
+    Top,
     WordsContainer
   },
   data() {

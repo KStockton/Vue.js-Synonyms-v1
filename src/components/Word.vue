@@ -3,7 +3,6 @@
     <article  v-bind:key='word' v-for='word in results' class='card-wrapper'>
       <header >
         <h1>{{word.meta.id}}</h1>
-        {console.log('hi')}
         <h3><span>{{word.fl}}</span></h3>
       </header>
       <div class='word-bottom-half'>

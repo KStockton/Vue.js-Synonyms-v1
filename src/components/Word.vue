@@ -103,7 +103,7 @@ h5 {
 }
 
 .card-wrapper {
-  background-color: #e8e7e7;
+  background-color: white;
   border-radius: 9px;
   min-width: 21rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -125,12 +125,17 @@ h5 {
 button {
   cursor: pointer;
   font-size: 0.9rem;
-  background-color: gold;
+  background-color: #fef2cd;
+  text-transform: capitalize;
   font-weight: 500;
   margin: 6px;
   border: none;
   min-height: 30px;
-  border-radius: 5px;
+  border-radius: 2px;
   color: black;
+}
+
+button:hover {
+  text-decoration: underline;
 }
 </style>

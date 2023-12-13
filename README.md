@@ -3,7 +3,7 @@
 ### Goals and Objectives:
 To learn how to build a application in Vue.  
 
-View the website here  https://thesaurus-challenge.herokuapp.com/
+View the website [here](https://vuethesaurus.netlify.app)
 
 ### Setup
 * git clone [https://github.com/KStockton/Vue.js-Synonyms-v1.git]

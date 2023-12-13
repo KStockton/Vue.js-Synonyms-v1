@@ -1,16 +1,18 @@
-# Welcome to Synonyms in Vue.js
+# Welcome to Thesaurus in Vue.js
 
 ### Goals and Objectives:
-To learn how to build a application in Vue.js.  
+To learn how to build a application in Vue.  
 
 View the website here  https://thesaurus-challenge.herokuapp.com/
 
 ### Setup
 * git clone [https://github.com/KStockton/Vue.js-Synonyms-v1.git]
 * Obtain a Api Key from [Merriam-Webster](https://dictionaryapi.com/register/index)
+
+**Install Dependencies**:
 * npm install
 * npm run serve
-* Open http://localhost:8000/
+* Open http://localhost:8080/
 
 ### This project was built with using the following:
 - HTML

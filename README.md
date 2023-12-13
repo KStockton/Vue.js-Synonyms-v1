@@ -17,7 +17,6 @@ View the website [here](https://vuethesaurus.netlify.app)
 ### This project was built with using the following:
 - HTML
 - CSS
-- Node.js 
 - Vue.js
 - Async Javascript
 

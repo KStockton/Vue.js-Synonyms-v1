@@ -71,7 +71,7 @@ export default {
 }
 
 nav {
-  background-color: #14213d;
+  background-color: #bc82f4;
   height: 100px;
   width: 100vw;
   max-width: 100%;

@@ -4,16 +4,36 @@
       <header>
         <h1>{{ word.meta.id }}</h1>
         <h3>
-          <span>{{ word.fl }}</span>
+          {{ word.fl }}
         </h3>
       </header>
       <div class="word-bottom-half">
         <section v-bind:key="index" v-for="(shortdef, index) in word.shortdef">
           <h5>{{ index + 1 }}. {{ shortdef }}</h5>
-          <h3 v-if="word.def && word.def[0] && word.def[0].sseq && word.def[0].sseq[0] && word.def[0].sseq[0][0][1].syn_list">Synonyms</h3>
-          <section class="syns-wrapper" v-if="word.def && word.def[0] && word.def[0].sseq && word.def[0].sseq[0] && word.def[0].sseq[0][0][1].syn_list">
+          <h3
+            v-if="
+              word.def &&
+              word.def[0] &&
+              word.def[0].sseq &&
+              word.def[0].sseq[0] &&
+              word.def[0].sseq[0][0][1].syn_list
+            "
+          >
+            Synonyms
+          </h3>
+          <section
+            class="syns-wrapper"
+            v-if="
+              word.def &&
+              word.def[0] &&
+              word.def[0].sseq &&
+              word.def[0].sseq[0] &&
+              word.def[0].sseq[0][0][1].syn_list
+            "
+          >
             <button
-              v-for="(synonym, synIndex) in word.def[0].sseq[0][0][1].syn_list[0]"
+              v-for="(synonym, synIndex) in word.def[0].sseq[0][0][1]
+                .syn_list[0]"
               v-bind:key="synIndex"
               @click="$emit('change', synonym.wd)"
             >
@@ -52,9 +72,10 @@ header {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   margin-bottom: 10px;
-  background-color: #14213d;
+  background-color: #bc82f4;
   color: white;
 }
+
 h1 {
   font-size: 24px;
   text-transform: capitalize;
@@ -68,8 +89,8 @@ h3 {
   font-family: "Roboto", sans-serif;
 }
 
-span {
-  color: gold;
+header h3 {
+  color: black;
   text-transform: capitalize;
   font-style: italic;
 }
@@ -85,6 +106,14 @@ h5 {
   background-color: #e8e7e7;
   border-radius: 9px;
   min-width: 21rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.word-bottom-half h3 {
+  text-align: left;
+  margin-left: 1rem;
 }
 
 .syns-wrapper {
@@ -102,5 +131,6 @@ button {
   border: none;
   min-height: 30px;
   border-radius: 5px;
+  color: black;
 }
 </style>

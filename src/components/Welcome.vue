@@ -4,7 +4,8 @@
       <h1>Welcome</h1>
       <p>
         "I bought a thesaurus, but when I got home and opened it, all the pages
-        were blank. I have no words to describe how angry I am." - Rodney Dangerfield
+        were blank. I have no words to describe how angry I am." - Rodney
+        Dangerfield
       </p>
     </header>
   </div>
@@ -24,7 +25,7 @@ export default {
 }
 
 .welcome-container {
-  background-image: url("https://cdn.dribbble.com/users/1633085/screenshots/5899673/bookappillustration_4x.jpg");
+  background-image: url("../assets/abc.jpg");
   display: flex;
   align-items: center;
   width: 100vw;
@@ -45,14 +46,35 @@ h1 {
 }
 
 .welcome-container p {
-  font-size: 1.2rem
+  font-size: 1.2rem;
 }
 
 header {
   width: calc(52% - 100px);
   height: 16rem;
-  background-color: #ffffffdb;
+  background-color: #f3d79f;
   min-width: 18rem;
   padding: 1rem;
+}
+
+header h1 {
+  animation: swing 2s ease-in-out infinite;
+}
+
+@keyframes swing {
+  0% {
+    transform-origin: top;
+    transform: perspective(550px)rotatex(55deg);
+  }
+
+  50% {
+    transform: perspective(550px)rotatex(-55deg);
+  }
+
+  100% {
+    transform-origin: top;
+    transform: perspective(550px)rotatex(55deg);
+
+  }
 }
 </style>
